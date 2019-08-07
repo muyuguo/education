@@ -1,0 +1,585 @@
+#contentDetail {
+    .nav {
+        z-index: 10000;
+        margin-bottom: 20px;
+        height: 60px;
+        -webkit-box-shadow: 6px 6px 8px #b4b1b1;
+        box-shadow: 6px 6px 8px #b4b1b1;
+        position: relative;
+    }
+
+    .main {
+        height: auto;
+        width: 1903px;
+        margin: 0 auto;
+
+        .content-container {
+            width: 1240px;
+            height: 2955px;
+            margin: 0 auto;
+
+            .content-top {
+                height: 45px;
+                flex: 0 0 100%;
+                max-width: 100%;
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            .content-body {
+                padding: 0 5px 0 0;
+                flex: 0 0 75%;
+                max-width: 75%;
+                position: relative;
+                width: 100%;
+
+                .body-container {
+                    .common-content {
+                        margin-bottom: 10px;
+                        padding: 30px 30px 20px;
+                        border: 1px solid #eee;
+                        background: #fff;
+
+                        .header {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
+                            color: #484e54;
+                            font-size: 20px;
+                            font-weight: 700;
+                            width: 793px;
+                            height: 50px !important;
+
+                            .heat {
+
+                                display: flex;
+                                align-items: baseline;
+                                color: #a4a4a4;
+                                font-size: 12px;
+
+                                .views {
+                                    margin-right: 10px;
+                                }
+
+                                .reply {
+                                    margin-right: 10px;
+                                }
+
+                                .button {}
+                            }
+                        }
+
+                        .meta {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 30px;
+
+                            .user-avatar {
+                                width: 50px;
+                                height: 50px;
+                                margin-right: 20px;
+                                color: #333;
+                                font-size: 13px;
+                                line-height: 50px;
+
+                                a {
+                                    img {
+                                        width: 100%;
+                                        border-radius: 50%;
+                                        max-width: 100%;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+
+                            .user-name {
+                                margin-right: 20px;
+                                color: #333;
+                                font-size: 13px;
+                                display: flex;
+                                align-items: center;
+
+                                a {
+                                    color: #999;
+                                    font-size: 14px;
+                                }
+
+                                .level {
+                                    margin-left: 2px;
+                                    color: #fec42d;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                }
+                            }
+
+                            .datetime {
+                                margin-right: 20px;
+                                color: #333;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .markdown-body {
+                            color: #24292e;
+                            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            word-wrap: break-word;
+                            text-align: left;
+
+                            margin: 0 auto;
+                            width: 790px;
+
+                            .v-note-wrapper .v-note-panel .v-note-edit.divarea-wrapper {
+
+                                min-height: 600px;
+                                max-height: 600px;
+
+                            }
+
+                            .v-note-wrapper .v-note-panel .v-note-show {
+
+                                min-height: 600px;
+                                max-height: 600px;
+                            }
+
+                            /*img {
+                                max-width: 100%;
+                                box-sizing: content-box;
+                                background-color: #fff;
+                            }*/
+                        }
+
+                        .btns {
+                            display: flex;
+                            justify-content: flex-end;
+                            margin-top: 30px;
+                        }
+
+                        .add-answer {
+                            .title {
+                                padding: 20px 0;
+                                margin: 20px 0;
+                                color: #666;
+                                font-size: 18px;
+                                border-bottom: 1px solid #eee;
+                                text-align: left;
+                            }
+
+                            .answer-editor {
+                                .editor-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid #ccc;
+                                    min-height: 250px;
+
+                                    .el-textarea__inner {
+                                        display: block;
+                                        resize: vertical;
+                                        padding: 5px 15px;
+                                        line-height: 1.5;
+                                        -webkit-box-sizing: border-box;
+                                        box-sizing: border-box;
+                                        width: 100%;
+                                        font-size: 16px;
+                                        color: #2e3135;
+                                        font-weight: 600;
+                                        background-color: #FFF;
+                                        background-image: none;
+                                        border: 1px solid #DCDFE6;
+                                        border-radius: 4px;
+                                        -webkit-transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+                                        transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+                                    }
+                                }
+
+                                .footer {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 10px 0;
+                                    margin-top: 10px;
+
+                                    .author {
+                                        display: flex;
+                                        align-items: center;
+
+                                        .user-avatar {
+                                            width: 50px;
+                                            height: 50px;
+                                            margin-right: 10px;
+                                            position: relative;
+
+                                            img {
+                                                width: 100%;
+                                                border-radius: 50%;
+                                                max-width: 100%;
+                                                vertical-align: middle;
+                                            }
+                                        }
+
+                                        .user-name {
+                                            display: flex;
+                                            align-items: center;
+
+                                            a {
+                                                color: #999;
+                                                font-size: 14px;
+                                            }
+
+                                            .level {
+                                                margin-left: 2px;
+                                                color: #fec42d;
+                                                font-size: 12px;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+
+                                    .btns {
+                                        padding-left: 20px;
+                                        padding-right: 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .answers {
+                            .title {
+                                padding: 20px 0;
+                                margin: 20px 0;
+                                color: #666;
+                                font-size: 18px;
+                                border-bottom: 1px solid #eee;
+                                text-align: left;
+                            }
+
+                            .answer {
+                                .user-avatar {
+                                    width: 50px;
+                                    height: 50px;
+
+                                    img {
+                                        width: 100%;
+                                        border-radius: 50%;
+                                        max-width: 100%;
+                                        vertical-align: middle;
+                                    }
+                                }
+
+                                .content {
+
+                                    margin-left: 60px;
+                                    margin-top: -40px;
+
+                                    .meta {
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        .meta-users {
+                                            display: flex;
+                                            align-items: flex-end;
+
+                                            .user-name {
+                                                display: flex;
+                                                align-items: center;
+
+                                                a {
+                                                    color: #999;
+                                                    font-size: 14px;
+                                                }
+
+                                                .level {
+                                                    margin-left: 2px;
+                                                    color: #fec42d;
+                                                    font-size: 12px;
+                                                    font-weight: 700;
+                                                }
+                                            }
+                                        }
+
+                                        .like {
+                                            color: #333;
+                                            font-size: 16px;
+                                        }
+                                    }
+
+                                    //一级回复
+                                    .comment-form-1 {
+                                        margin-top: 1.083rem;
+                                        padding: 1rem;
+                                        display: flex;
+                                        position: relative;
+                                        padding: 1rem 1.333rem;
+                                        background-color: #fafbfc;
+                                        border-radius: 3px;
+                                        border: 1px solid #eee;
+
+
+                                        .form-box {
+                                            flex: 1 1 auto;
+                                            position: relative;
+
+                                            .input-box {}
+
+                                            .action-box {
+                                                float: right;
+                                                display: flex;
+                                                align-items: center;
+                                                margin: .65rem 0 0;
+                                            }
+                                        }
+                                    }
+
+                                    .answer-content {
+                                        position: relative;
+
+                                        .content-text {
+                                            margin-top: 20px;
+                                            text-align: left;
+                                        }
+
+                                        .date-time {
+                                            padding: 15px 0 0;
+                                            color: #999;
+                                            font-size: 14px;
+                                        }
+
+                                        .btns {
+                                            display: flex;
+                                            justify-content: flex-end;
+
+                                            .reply {
+                                                padding: 2px;
+                                                color: #666;
+                                                font-size: 12px;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //右侧功能区
+        .right-complex {
+            width: 280px;
+            position: absolute;
+            float: right;
+            top: 45px;
+            left: 1280px;
+
+            .right-content {
+
+                border-radius: 2px;
+
+                button {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    margin-left: 0px;
+                    height: 60px;
+                    font-size: 20px;
+
+                }
+
+                //近期活动
+                .event-notice {
+                    margin-bottom: 10px;
+                    width: 100%;
+                    min-height: 150px;
+                    background-color: #fff;
+                    border-radius: 2px;
+                    box-shadow: 3px 4px 5px #eee;
+
+                    //活动头
+                    .box-header {
+                        padding: 10px;
+
+                        position: absolute;
+                        width: 261px;
+                        text-align: left;
+                        background-color: #f6f6f6;
+
+                        span {
+                            font-size: 16px;
+                            color: #333;
+                            font-weight: 700;
+                        }
+                    }
+
+                    //活动内容
+                    .box-body {
+                        padding: 10px;
+                        font-size: 14px;
+                        position: absolute;
+                        top: 190px;
+                        color: #333;
+
+                        ul {
+                            li {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.byreply-content {
+    margin: 1rem 0;
+    padding: 0 0 0 1rem;
+    background-color: #fafbfc;
+    border-radius: 3px;
+
+    .item {
+        .comment-content-container {
+            position: relative;
+            padding: 1rem 0 0;
+
+            .comment-content-box {
+                display: flex;
+
+
+                .comment-content {
+                    display: flex;
+                    width: 100%;
+
+                    .user-popover-box {
+                        display: inline-block;
+                        height: 33px;
+
+                        .username {
+                            width: 50px;
+                            height: 50px;
+
+                            img {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+
+                    .user-content-box {
+                        margin-left: .833rem;
+                        margin-right: 1rem;
+                        padding-bottom: 12px;
+                        font-size: 1.083rem;
+                        color: #17181a;
+                        width: 100%;
+
+                        .profie {
+                            display: flex;
+
+                            .user-reply {
+                                display: flex;
+                                align-items: center;
+
+                                a {
+                                    color: #999;
+                                    font-size: 14px;
+                                }
+
+                                .level {
+                                    margin-left: 2px;
+                                    color: #fec42d;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                }
+                            }
+
+                            .position-byreply {
+                                color: #8a9aa9;
+                                font-size: 13px;
+                                font-weight: 400;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                max-width: 13.5rem;
+                            }
+                        }
+
+                        .content-box {
+                            margin-top: .5rem;
+                            float: left;
+
+                            .byreplyer {
+                                display: inline-block;
+                            }
+
+                            .content {
+                                white-space: pre-wrap;
+                                color: #505050;
+                                line-height: 1.833rem;
+                            }
+                        }
+
+                        .footer-content {
+                            .date-time {
+                                padding: 15px 0 0;
+                                color: #999;
+                                font-size: 14px;
+                            }
+
+                            .btns {
+                                display: flex;
+                                justify-content: flex-end;
+
+                                .reply {
+                                    padding: 2px;
+                                    color: #666;
+                                    font-size: 12px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        //二级回复
+                        .comment-form {
+                            margin-top: 1.083rem;
+                            padding: 1rem;
+                            display: flex;
+                            position: relative;
+                            padding: 1rem 1.333rem;
+                            background-color: #fff;
+                            border-radius: 3px;
+                            border: 1px solid #eee;
+
+                            .form-box {
+                                flex: 1 1 auto;
+                                position: relative;
+
+                                .input-box {}
+
+                                .action-box {
+                                    float: right;
+                                    display: flex;
+                                    align-items: center;
+                                    margin: .65rem 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+}

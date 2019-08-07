@@ -1,0 +1,85 @@
+#feedBack {
+    width: 1903px;
+    margin: 0 auto;
+
+    .nav {
+        width: 1903px;
+        height: 60px;
+        clear: none;
+        display: block;
+        font-size: 16px;
+        background-color: #2e323e;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .main {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        min-height: 1000px;
+        .feedBack-container {
+            position: relative;
+            width: 1205px;
+            margin: 0 auto;
+
+            .left-nav {
+                width: 265px;
+                height: 415px;
+                position: absolute;
+                border: 1px solid #eee;
+                box-shadow: 0px 3px 5px #eee;
+
+                ul {
+                    li {
+                        list-style: none;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 16px;
+                        width: 100%;
+                        cursor: pointer;
+                        border-bottom: 1px solid #eee;
+
+                    }
+
+                    li:hover {
+                        color: #35AFFB;
+
+                        .left-text-box {
+                            height: 50px;
+                            width: 10px;
+                            background-color: #E5E5E5;
+                            float: left;
+                        }
+
+                        .right-text-content {
+
+                            height: 50px;
+                            line-height: 50px;
+                            width: 255px;
+                            background-color: #F8F8F8;
+                            float: left;
+                        }
+                    }
+                }
+            }
+
+            .right-content {
+                width: 920px;
+                min-height: 1000px;
+                border: 1px solid #eee;
+                position: absolute;
+                left: 300px;
+                box-shadow: 0px 3px 5px #bbb;
+            }
+        }
+    }
+}
+
+.activeNav {
+    color: #fff;
+    background-color: #35AFFB;
+}

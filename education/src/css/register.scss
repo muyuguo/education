@@ -1,0 +1,53 @@
+#register {
+    width: 100%;
+
+    .register-wrapper {
+        border: 1px solid #807b7b;
+        width: 500px;
+        min-width: 500px;
+        height: 500px;
+        margin-left: 800px;
+        margin-top: 200px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        border-radius: 2px;
+
+        .register-container-top {
+            padding: 20px 20px;
+
+        }
+
+        .register-container-main {
+            padding: 0;
+
+            .register-content {
+                padding: 0 40px 40px;
+                margin-top: -20px;
+
+                .register-set-panel .rgister-text {
+                    width: 420px;
+                }
+            }
+        }
+    }
+}
+//注册头
+.register-set-panel .rgister-text .title {
+    border-bottom: 3px solid #DDDDDD;
+    height: 50px;
+    text-align: left;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+//验证码
+.register-set-panel .rgister-text .verification {
+    margin-bottom: 30px;
+}

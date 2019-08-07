@@ -1,0 +1,264 @@
+#vip {
+    width: 1903px;
+    margin: 0 auto;
+
+    .nav {
+        z-index: 10000;
+        margin-bottom: 20px;
+        height: 60px;
+        -webkit-box-shadow: 6px 6px 8px #b4b1b1;
+        box-shadow: 6px 6px 8px #b4b1b1;
+        position: relative;
+    }
+
+    .main {
+        margin: 0 auto;
+        position: relative;
+        width: 1903px;
+        height: 2500px;
+
+        .myvip-header {
+            width: 1903px;
+            height: 340px;
+            position: absolute;
+
+            .myvip-img {
+                width: 1903px;
+                height: 340px;
+
+                img {
+                    width: 1903px;
+                    height: 340px;
+                    z-index: -2;
+                }
+
+                .myvip-detail {
+                    position: absolute;
+                    top: 100px;
+                    left: 500px;
+                    font-size: 30px;
+                }
+            }
+
+            .myvip-open {
+                width: 420px;
+                height: 210px;
+                background-color: #fff;
+                position: absolute;
+                border-radius: 8px;
+                left: 1200px;
+                top: 60px;
+
+                .card-body {
+                    padding: 20px;
+
+                    .user-info {
+                        width: 380px;
+                        height: 85px;
+
+                        .user-img {
+                            width: 80px;
+                            height: 80px;
+                            margin-right: 10px;
+                            margin-left: 70px;
+
+                            img {
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 50%;
+                            }
+
+                            .user-detail {
+                                margin-top: -70px;
+                                margin-left: 90px;
+                                width: 180px;
+                                height: 86px;
+                                .name {
+                                    text-align: left;
+                                    float: left;
+                                }
+                                .grade {
+                                    color: #fec42d;
+                                    float: left;
+                                    padding-left: 20px;
+                                }
+                                .join-time {
+                                    text-align: left;
+                                    padding-top: 5px;
+                                    clear: both;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .shortly-open {
+                        width: 375px;
+                        height: 85px;
+                        button {
+                            margin-top: 20px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .myvip-select {
+            width: 1200px;
+            height: 500px;
+            position: absolute;
+            margin-left: 352px;
+            margin-right: 352px;
+            top: 350px;
+
+            .myvip-select-top {
+                width: 1200px;
+                height: 150px;
+
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: 36px;
+                    color: #676767;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #868686;
+                }
+            }
+
+            .myvip-select-content {
+                width: 1200px;
+                height: 350px;
+
+                .box {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 6px;
+                    background-color: #f8f6f6;
+                    float: left;
+                    margin-left: 75px;
+                    box-shadow: 0px 3px 5px rgb(167, 166, 166);
+                }
+
+                .top-line {
+                    height: 100px;
+                    border-bottom: 2px dashed #dcdcdc;
+
+                    h1 {
+                        padding-top: 30px;
+                        color: #666;
+                    }
+                }
+
+                .vip-money1 {
+                    padding-top: 30px;
+
+                    p {
+                        color: #ca70b7;
+                        font-size: 40px;
+                    }
+
+                    button {
+                        margin-top: 20px;
+                        font-size: 30px;
+                    }
+
+                }
+
+                .vip-money3 {
+                    padding-top: 30px;
+
+                    p {
+                        color: #ffc500;
+                        font-size: 40px;
+                    }
+
+                    button {
+                        margin-top: 20px;
+                        font-size: 30px;
+                    }
+                }
+
+                .vip-money12 {
+                    padding-top: 30px;
+
+                    p {
+                        color: #f66;
+                        font-size: 40px;
+                    }
+
+                    button {
+                        margin-top: 20px;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        .vip-equity {
+            position: absolute;
+            height: 1600px;
+            top: 850px;
+            width: 1903px;
+            background-color: #F6F6F6;
+
+            .myvip-equity-top {
+                width: 1500px;
+                height: 150px;
+                margin-left: 202px;
+                margin-right: 202px;
+
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: 36px;
+                    color: #676767;
+                }
+            }
+
+            .myvip-equity-content {
+                width: 1500px;
+                height: 1050px;
+                margin: 0 auto;
+
+                .equity {
+                    width: 1110px;
+                    height: 165px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 100px;
+
+                    .equity-img {
+                        width: 540px;
+                        height: 165px;
+                    }
+
+                    .equity-content {
+                        width: 570px;
+                        height: 165px;
+                        margin-left: 600px;
+
+                        h2 {
+                            width: 100px;
+
+                            margin-top: -170px;
+                            margin-bottom: 28px;
+                            font-weight: 400;
+                            border-bottom: 2px solid #08bf91;
+                            color: #08bf91;
+                        }
+
+                        p {
+                            text-align: left;
+                            font-size: 20px;
+                            letter-spacing: 2px;
+                            line-height: 1.75;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    font-family: OpenSans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+}
+
+.scroll-nav {
+    width: 1903px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+//top-header部分
+.header {
+    width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+    height: 139px !important;
+}
+
+.top-header {
+    width: 100%;
+    height: 106px;
+    border-bottom: 1px solid #DCDFE6;
+}
+
+.top-header-logo {
+    margin-right: 150px;
+
+    img {
+        width: 188px;
+        height: 55px;
+        margin-top: 24px;
+    }
+}
+
+.top-header-search {
+    width: 400px;
+    height: 40px;
+    margin: 30px 6px 0 0;
+}
+
+.top-header-right-menu {
+    margin-top: 37px;
+    margin-left: 55px;
+    text-align: left;
+
+    a {
+        margin-right: 20px;
+        color: #333;
+    }
+
+    a:hover {
+        color: #35AFFB;
+    }
+
+    .login-register {
+        width: 200px;
+        text-align: left;
+
+        a {
+            margin-right: 10px;
+
+        }
+
+        .login-line {
+            border: 1px solid rgb(163, 162, 162);
+            margin: auto;
+        }
+
+        //个人信息
+        .personalInfo {
+            position: absolute;
+
+            .personal-center {
+                position: absolute;
+                left: 20px;
+            }
+
+            .personal-img-container {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: -6px;
+                left: 154px;
+            }
+
+            .personal-img-info {
+                position: relative;
+            }
+
+            .avatar-dropdown-complex {
+                position: absolute;
+                background-color: #fff;
+                width: 160px;
+                height: 213px;
+                border-radius: 4px;
+                box-shadow: 2px 3px 10px rgb(67, 68, 70);
+                padding: 10px 10px 0 10px;
+                left: -122px;
+                top: 45px;
+
+                .triangle1 {
+                    display: block;
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border: 8px solid transparent;
+                    border-bottom-color: grey;
+                    top: -17px;
+                    left: 130px;
+                }
+
+                .triangle2 {
+                    display: block;
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border: 8px solid transparent;
+                    top: -16px;
+                    border-bottom-color: white;
+                    left: 130px;
+                }
+
+                ul {
+
+                    li {
+                        list-style: none;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 14px;
+                        color: #999;
+                        width: 140px;
+                        padding-left: 20px;
+                    }
+
+                    li:hover {
+                        background-color: #E5E5E5;
+                        cursor: pointer;
+                        color: #35AFFB;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//top-nav部分
+.top-nav {
+    width: 100%;
+    height: 33px;
+
+    a {
+        color: #333;
+    }
+
+    a:hover {
+        color: #35AFFB;
+    }
+
+    .top-nav-menu {
+        height: 33px;
+        line-height: 33px;
+
+        .top-nav-explore {
+            .dropdown-menu-explore {
+                position: relative;
+                width: 60px;
+                text-align: left;
+                z-index: 1000;
+
+                .dropdown-menu-arrow {
+                    display: inline-block;
+                    border-top: 2px solid;
+                    border-right: 2px solid;
+                    width: 6px;
+                    height: 6px;
+                    border-color: #2C3E50;
+                    -webkit-transform: rotate(-225deg);
+                    transform: rotate(-225deg);
+                    margin: 50px auto auto 100px;
+                    position: absolute;
+                    top: -39px;
+                    left: -61px;
+                }
+            }
+
+            .dropdown-menu-explore:hover {
+                color: #35AFFB;
+                position: relative;
+                width: 60px;
+                text-align: left;
+
+                .dropdown-menu-arrow {
+                    display: inline-block;
+                    border-top: 2px solid;
+                    border-right: 2px solid;
+                    width: 6px;
+                    height: 6px;
+                    border-color: #35AFFB;
+                    -webkit-transform: rotate(315deg);
+                    transform: rotate(315deg);
+                    margin: 50px auto auto 100px;
+                    position: absolute;
+                    top: -35px;
+                    left: -61px;
+                }
+
+            }
+        }
+
+        //社区模块
+        .top-nav-community {
+
+            .community-dropdown {
+                z-index: 10000;
+                background-color: #fff;
+                width: 120px;
+                height: 100px;
+                margin-top: 33px;
+                box-shadow: 2px 3px 10px rgb(67, 68, 70);
+                border-radius: 3px;
+
+                li {
+                    height: 40px;
+                    line-height: 40px;
+                    width: 110px;
+                    margin-bottom: 5px;
+                    list-style: none;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+
+                li:hover {
+                    background-color: #E5E5E5;
+
+                }
+            }
+        }
+
+        .top-nav-community:hover {
+            color: #35AFFB;
+        }
+    }
+}
+
+//探索模块
+.dropdown-menu-content {
+    width: 200px;
+    height: 400px;
+    background: #fff;
+    z-index: 10000;
+    box-shadow: 2px 5px 10px rgb(67, 68, 70);
+    border-radius: 3px;
+
+    .drop-menu-content-first {
+        list-style: none;
+        height: 39px;
+        color: #333;
+        text-align: center;
+        border-bottom: 1px solid #E5E5E5;
+    }
+
+    .drop-menu-content-first:hover {
+        background-color: #E5E5E5;
+    }
+
+}
+
+//下拉二级菜单
+.dropdown-menu-content-list {
+    z-index: 10000;
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+
+    .drop-menu-content-second {
+        list-style: none;
+        text-align: left;
+    }
+
+}
+
+.top-nav .top-nav-menu .top-nav-complex {
+    li {
+        list-style: none;
+        margin-left: 32px;
+    }
+}
+
+//main部分
+.main {
+    height: 3200px !important;
+
+    //热门课程部分
+    .popularCourse {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        height: 420px;
+
+        .popular-course-container {
+            width: 1260px;
+            height: 420px;
+            position: relative;
+            font-size: 16px;
+            margin: 0 auto;
+
+            .course-title {
+                color: black;
+                font-size: 26px;
+                font-weight: bold;
+                text-align: left;
+                border-bottom: 2px solid #eee;
+
+                .more {
+                    font-size: 14px;
+                    color: rgb(59, 59, 59);
+                    float: right;
+                }
+            }
+
+            .course-list {
+                width: 1260px;
+                margin-top: 30px;
+                height: 320px;
+                position: absolute;
+                font-size: 16px;
+
+                ul {
+                    li {
+                        list-style: none;
+                        width: 236px;
+                        height: 270px;
+                        margin-right: 14px;
+                        float: left;
+                        background-color: #f7f7f7;
+
+                        a {
+
+                            display: inline-block;
+                            width: 100%;
+                            height: 270px;
+                        }
+
+                        a:hover {
+                            box-shadow: 0px 5px 5px rgb(163, 163, 163);
+                            transform: translateY(-10px);
+                            transition: box-shadow 0.5s, transform 0.5s;
+                            border-top: 2px solid #4cdec3;
+                        }
+                    }
+                }
+
+                .detail-top {
+                    width: 236px;
+                    height: 136px;
+                    font-size: 16px;
+                    position: absolute;
+                    border-bottom: 1px solid #eee;
+
+                    img {
+                        width: 236px;
+                        height: 136px;
+                    }
+                }
+
+                .course-teacher {
+                    position: absolute;
+                    height: 24px;
+                    top: 150px;
+                    padding-left: 10px;
+                    color: #818a92;
+                }
+
+                .course-teacher-detail {
+                    width: 216px;
+                    height: 24px;
+                    font-size: 14px;
+                    position: absolute;
+                    color: #818a92;
+                    top: 200px;
+                    overflow: hidden;
+                    padding-left: 9px;
+
+
+                }
+
+                .detail-main {
+                    width: 226px;
+                    height: 41px;
+                    font-size: 14px;
+                    position: absolute;
+                    color: #818a92;
+                    top: 230px;
+                    text-align: left;
+                    overflow: hidden;
+                    padding-left: 11px;
+                }
+            }
+        }
+    }
+}
+
+//footer部分
+.footer-wrapper {
+    margin-top: 30px;
+}
+
+.el-submenu__title {
+    font-size: 16px !important;
+    color: #303133;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition: border-color .3s, background-color .3s, color .3s;
+    transition: border-color .3s, background-color .3s, color .3s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.el-row {
+    margin: 0 !important;
+}
+
+.grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+}
+
+.bg-purple-dark {
+    background: #99a9bf;
+}
+
+.bg-purple-light {
+    background: #e5e9f2;
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+    background-color: #0ac7f2;
+    color: #000000;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    border: 1px solid #0ac7f2;
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.el-select .el-input {
+    width: 90px !important;
+}
+
+body>.el-container {
+    margin-bottom: 40px;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+    line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+    line-height: 320px;
+}
+
+.el-select .el-input {
+    width: 130px;
+}
+
+.input-with-select .el-input-group__prepend {
+    background-color: #fff;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.margin-left-32 {
+    margin-left: 32px;
+}
+
+.el-menu-item [class^=el-icon-] {
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    font-size: 34px !important;
+    vertical-align: middle;
+}
+
+.menu {
+    .logo:hover {
+        background-color: #545c64 !important;
+    }
+}
+
+.app {
+    .el-row {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+
+.flex {
+    .el-col {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+//社区
+.commetn-community {
+    width: 1260px;
+    height: 240px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    li {
+        width: 400px;
+        height: 230px;
+        cursor: pointer;
+        border: 1px solid #eee;
+        box-shadow: 0 3px 5px #ccc;
+        float: left;
+        margin-left:15px; 
+        list-style: none;
+
+        img {
+            width: 400px;
+            height: 200px;
+        }
+
+    }
+
+}

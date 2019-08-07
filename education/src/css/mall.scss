@@ -1,0 +1,44 @@
+#mall {
+    width: 1903px;
+    margin: auto;
+    .nav {
+
+    }
+    .main {
+        width: 1903px;
+        height: 900px !important;
+        margin: auto;
+        .mall-banner {
+            width: 1903px;
+            height: 200px;
+            margin-bottom: 30px;
+            .info {
+                background-color: rgba($color: #ccc, $alpha: 0.3);
+                box-shadow: 0 3px 5px #ccc;
+                width: 400px;
+                height: 100px;
+                color: #eee;
+                position: absolute;
+                left: 1200px;
+                top: 50px;
+                .golden-bean {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                }
+                p {
+                    color: #F3C23A;
+                    font-size: 16px;
+                    width: 140px;
+                    margin: auto;
+                    i {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+
+    }
+}

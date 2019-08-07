@@ -1,0 +1,205 @@
+#forum {
+    width: 1903px;
+    margin: 0 auto;
+    color: #E1E1E1;
+    //nav-部分
+    .top-nav {
+        z-index: 10000;
+        margin-bottom: 20px;
+        height: 60px;
+        box-shadow: 6px 6px 8px rgb(180, 177, 177);
+        position: relative;
+    }
+
+    //main部分
+    .main {
+        margin-bottom: 20px;
+        height: 1000px;
+        width: 100%;
+        margin: 0 auto;
+
+
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .left-forum-complex {
+                width: 850px;
+                margin-left: 370px;
+
+                .forum-content {
+                    padding: 30px 30px 20px;
+                    margin-bottom: 10px;
+                    border: 2px solid #eee;
+                    border-radius: 2px;
+                    z-index: 100;
+                    position: relative;
+
+                    .first-content {
+                        padding: 20px 0;
+                        height: 50px;
+                        line-height: 78px;
+                        position: relative;
+
+                        .content-avatar {
+                            position: relative;
+                            width: 70px;
+                            padding: 0 15px;
+
+                            .avatar-img {
+                                width: 50px;
+                                height: 50px;
+
+                                img {
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+
+                        .content-info {
+                            padding: 0 15px;
+                            position: absolute;
+                            top: -10px;
+                            left: 75px;
+                            width: 580px;
+                            text-align: left;
+                            height: 91px;
+
+                            .content-title {
+                                margin-bottom: 5px;
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+
+                            .content-tip {
+                                max-height: 0;
+                                .author {
+                                    position: absolute;
+                                    top: 29px;
+                                    left: 16px;
+                                    margin-right: 15px;
+                                    color: #999;
+                                    font-size: 14px;
+                                    max-height: 0;
+                                }
+
+                                .date {
+                                    position: absolute;
+                                    top: 29px;
+                                    left: 72px;
+                                    color: #9b9da2;
+                                    margin-right: 15px;
+                                    font-size: 13px;
+                                    max-height: 0;
+                                }
+                            }
+                        }
+                    }
+                    .pagination {
+                        margin-top: 30px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 786px;
+                        
+                        li {
+                            width: 22px;
+                        }
+                    }
+                }
+
+            }
+                //右侧功能区
+            .right-complex {
+                width: 280px;
+                margin-right: 370px;
+                margin-left: 20px;
+                position: relative;
+
+                .right-content {
+                    
+                    border-radius: 2px;
+                    button {
+                        width: 100%;
+                        margin-bottom: 15px;
+                        margin-left: 0px;
+                        height: 60px;
+                        font-size: 20px;
+
+                    }
+                    //近期活动
+                    .event-notice {
+                        margin-bottom: 10px;
+                        width: 100%;
+                        min-height: 150px;
+                        
+                        background-color: #fff;
+                        border-radius: 2px;
+                        box-shadow: 3px 4px 5px #eee;
+                        //活动头
+                        .box-header {
+                            padding: 10px;
+                            
+                            position: absolute;
+                            width: 261px;
+                            text-align: left;
+                            background-color: #f6f6f6;
+                            span {
+                                font-size: 16px;
+                                color: #333;
+                                font-weight: 700;
+                            }
+                        }
+                        //活动内容
+                        .box-body {
+                            padding: 10px;
+                            font-size: 14px;
+                            position: absolute;
+                            top: 190px;
+                            color: #333;
+                            ul {
+                                li {
+                                    list-style: none;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .el-tabs__item {
+        padding: 0 20px;
+        height: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        line-height: 40px;
+        display: inline-block;
+        list-style: none;
+        font-weight: 500;
+        color: #303133;
+        position: relative;
+        width: 130px;
+        font-size: 16px;
+    }
+    //footer部分
+    .footer {}
+}
+
+
+
+.line {
+    border-bottom: 1px solid #eee;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

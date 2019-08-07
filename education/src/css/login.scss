@@ -1,0 +1,141 @@
+//页面布局
+#login {
+    width: 100%;
+
+    .nav {
+        z-index: 10000;
+        margin-bottom: 20px;
+        height: 60px;
+        -webkit-box-shadow: 6px 6px 8px #b4b1b1;
+        box-shadow: 6px 6px 8px #b4b1b1;
+        position: relative;
+        background-color: #333333;
+    }
+
+    .main {
+        height: 560px !important;
+        .bg-image {
+            position: absolute;
+            top: -105px;
+            left: 100px;
+        }
+        .login-wrapper {
+            border: 1px solid #807b7b;
+            width: 440px;
+            min-width: 440px;
+            height: 457px;
+            position: absolute;
+            top: 50px;
+            left: 1100px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #fff;
+            border-radius: 2px;
+
+            .login-container-top {
+                padding: 20px 20px;
+            }
+
+            .login-container-main {
+                padding: 0;
+
+                .login-content {
+                    padding: 0 40px 40px;
+                    margin-top: -20px;
+
+                    .login-set-panel .login-text {
+                        width: 360px;
+                    }
+                }
+            }
+        }
+    }
+
+    //标签页
+    .el-tabs__item {
+        padding: 0 20px;
+        height: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        line-height: 40px;
+        display: inline-block;
+        list-style: none;
+        font-weight: 500;
+        color: #303133;
+        position: relative;
+        width: 180px;
+        font-size: 20px;
+    }
+
+    .footer {
+        background-color: #333333;
+    }
+}
+
+//跳转登录方式
+.phone-login .info-login {
+    text-align: right;
+    margin-bottom: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.phone-login .info-login:hover {
+    cursor: pointer;
+    color: #35AFFB;
+}
+
+.sms-login .info-login {
+    text-align: right;
+    margin-bottom: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.sms-login .info-login:hover {
+    cursor: pointer;
+    color: #35AFFB;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.login-complex .freelogin {
+    .line {
+        border: 1px solid #606266;
+        ;
+        margin-left: 10px;
+    }
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #35AFFB;
+}
+
+//其他登录方式
+.other-options {
+    height: 88px;
+    position: relative;
+
+    span {
+        margin: 43px 0;
+        margin-left: 40px;
+        margin-right: 20px;
+        font-size: 14px;
+        margin-top: 28px;
+    }
+
+    a {
+        margin-top: 18px;
+        margin-right: 25px;
+    }
+}

@@ -1,0 +1,82 @@
+{
+  "name": "education",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "webpack",
+    "dev": "webpack-dev-server --content-base build --inline --hot"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^3.1.4",
+    "element-ui": "^2.10.1",
+    "emoji-vue": "^0.2.4",
+    "lodash": "^4.17.14",
+    "mavon-editor": "^2.7.5",
+    "node-sass": "^4.12.0",
+    "vue": "^2.6.10",
+    "vue-axios": "^2.1.4",
+    "vue-emoji-picker": "^1.0.1",
+    "vue-monoplasty-slide-verify": "^1.0.5",
+    "vue-router": "^3.0.7",
+    "vue-video-player": "^5.0.2",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "babel-eslint": "^10.0.1",
+    "css-loader": "^3.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "file-loader": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "sass": "^1.22.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "url-loader": "^2.0.1",
+    "vue": "^2.6.10",
+    "vue-lazyload": "^1.3.1",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "author": "",
+  "license": "ISC"
+}

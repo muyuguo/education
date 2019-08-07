@@ -1,0 +1,343 @@
+#courseList {
+    width: 1903px;
+    margin: 0 auto;
+
+    .nav {
+        z-index: 10000;
+        margin-bottom: 20px;
+        height: 60px;
+        -webkit-box-shadow: 6px 6px 8px #b4b1b1;
+        box-shadow: 6px 6px 8px #b4b1b1;
+        position: relative;
+    }
+
+    .main {
+        width: 1310px;
+        height: 1800px;
+        margin: 0 auto;
+
+        .classify-wrapper {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px; 
+            //分类选项
+            .classify-options {
+                padding: 30px 30px 20px;
+                border: 1px solid #eee;
+                background: #fff;
+                width: 1210px;
+
+                .options-content {
+                    .options-filters {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .options-top {
+                            width: 100%;
+
+                            .title-wrapper {
+                                padding: 0;
+                                max-width: 62px;
+                                flex: 0 0 8.33333%;
+                                position: relative;
+                                width: 100%;
+                                float: left;
+
+                                .filter-title {
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .item-wrapper {
+                                max-width: 100%;
+                                flex-grow: 1;
+                                padding-left: 0;
+                                padding-right: 63px;
+                                overflow: hidden;
+                                flex: 0 0 91.66667%;
+                                position: relative;
+                                width: 100%;
+                                margin-top: 35px;
+                                text-align: left;
+
+                                .filter-item {
+                                    color: #fff;
+                                    background: #35AFFB;
+                                    display: inline-block;
+                                    margin: 0 4px 10px 0;
+                                    padding: 4px 10px;
+                                    font-size: 15px;
+                                    border-radius: 15px;
+                                    cursor: pointer;
+                                    transition: background .5s ease;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        //标签
+                        .tag-wrapper {
+                            display: block;
+
+                            .title-wrapper {
+                                padding: 0;
+                                max-width: 62px;
+                                flex: 0 0 8.33333%;
+                                position: relative;
+                                width: 100%;
+                                float: left;
+
+                                .filter-title {
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .item-wrapper {
+                                max-width: 100%;
+                                flex-grow: 1;
+                                padding-left: 0;
+                                padding-right: 63px;
+                                overflow: hidden;
+                                flex: 0 0 91.66667%;
+                                position: relative;
+                                width: 100%;
+                                margin-top: 35px;
+                                text-align: left;
+
+                                .filter-item {
+                                    color: #fff;
+                                    background: #35AFFB;
+                                    display: inline-block;
+                                    margin: 0 4px 10px 0;
+                                    padding: 4px 10px;
+                                    font-size: 15px;
+                                    border-radius: 15px;
+                                    cursor: pointer;
+                                    transition: background .5s ease;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        //水平线
+                        .hr-line {
+                            height: 10px;
+                            width: 100%;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            border-bottom: 1px solid #ddd;
+                        }
+
+                        //选课项
+                        .course-group {
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+
+                            .right-options {
+                                float: right;
+
+                                .select-option {
+                                    float: left;
+                                }
+
+                                .el-dropdown-link {
+                                    cursor: pointer;
+                                    color: #409EFF;
+                                }
+
+                                .el-dropdown {
+                                    height: 32px;
+                                }
+
+                                .button-options {
+                                    margin-left: 20px;
+                                    float: left;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //课程列表
+            .course-list {
+                margin-bottom: 20px;
+                width: 1310px;
+                margin-left: auto;
+                margin-right: auto;
+                .course-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 1310px;
+                    .course-info {
+                        width: 100%;
+
+                        .course-item-box {
+                            li {
+                                position: relative;
+                                margin-top: 20px;
+                                padding-right: 15px;
+                                float: left;
+                                list-style: none;
+                                width: 242px;
+                                cursor: pointer;
+
+
+                                .course-item {
+                                    box-shadow: 0 3px 5px #ccc;
+
+                                    .item-box-top {
+                                        position: relative;
+                                        border-bottom: 1px solid #eee;
+
+                                        .course-cover {
+                                            position: relative;
+
+                                            img {
+                                                width: 242px;
+                                                height: 150px;
+                                            }
+                                        }
+                                    }
+
+                                    .item-box-bottom {
+                                        height: 130px;
+                                        bottom: 0;
+                                        background: #fff;
+                                        transition: bottom .3s;
+                                        position: relative;
+
+                                        .course-info-wrapper {
+                                            position: absolute;
+                                            width: 222px;
+                                            height: 80px;
+                                            padding: 5px 10px 0;
+                                            top: 0;
+                                            background: #fff;
+                                            overflow: hidden;
+                                            text-align: left;
+                                            transition: top .3s ease-out;
+
+                                            h3 {
+                                                display: block;
+                                                width: 100%;
+                                                color: #666;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                            }
+
+                                            span {
+                                                color: #aaa;
+
+                                            }
+
+                                            .name {
+                                                margin-left: 20px;
+                                            }
+
+                                            .course-description {
+                                                display: -webkit-box;
+                                                margin-top: 10px;
+                                                color: #666;
+                                                font-size: 13px;
+                                                line-height: 1.4;
+                                                -webkit-line-clamp: 3;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                word-wrap: break-word;
+                                                display: none;
+                                                position: absolute;
+
+                                            }
+                                        }
+
+                                        .course-info-wrapper:hover {
+                                            height: 125px;
+                                            width: 222px;
+                                            position: absolute;
+                                            top: -50px;
+
+                                            .course-description {
+                                                display: -webkit-box;
+                                                margin-top: 10px;
+                                                color: #666;
+                                                font-size: 13px;
+                                                line-height: 1.4;
+                                                -webkit-line-clamp: 3;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                word-wrap: break-word;
+                                                display: block;
+                                            }
+                                        }
+
+                                        .course-data-meta {
+                                            position: absolute;
+                                            display: block;
+                                            bottom: 0;
+                                            left: 0;
+                                            height: 50px;
+                                            padding: 0 10px;
+                                            font-size: 12px;
+                                            color: #9b9da2;
+                                            background: #fff;
+                                            width: 222px;
+
+                                            .meta-data-inner {
+                                                height: 100%;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                .like {
+                                                    font-size: 28px;
+                                                    color: #ff00b2;
+                                                }
+                                                .nolike {
+                                                    font-size: 24px;
+                                                }
+                                                .course-type {
+                                                    background: #80c269;
+                                                    border-radius: 20px;
+                                                    padding: 3px 10px;
+                                                    font-size: 12px;
+                                                    display: inline-block;
+                                                    margin-left: 8px;
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //分页
+                .base-pagination {
+                    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+    margin-top: 30px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 786px;
+                        
+                        li {
+                            width: 22px;
+                        }
+                }
+            }
+        }
+    }
+
+    .footer {}
+}

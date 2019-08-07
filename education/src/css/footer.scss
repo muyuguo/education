@@ -1,0 +1,104 @@
+#footer-container {
+    background-color: #333;
+    color: #919191;
+    width: 1903px;
+    height: 320px;
+    border-top: 1px solid #EBEBEB;
+    margin: 0 auto;
+    .wrapper {
+        margin: 0 auto;
+        .inner-wrapper {
+            width: 1600px;
+            max-width: 1600px;
+            margin: 49px auto 66px;
+            white-space: nowrap;
+            display: flex; 
+            .inner-wrapper-complex {
+                border-right: 1px solid #EBEBEB;
+                padding-right: 40px;
+                height: 200px;
+            }
+            .inner-wrapper-right {
+                margin-left: 55px;
+                display: flex;
+                flex: 1;
+                justify-content: space-between; 
+            }
+        }
+    }
+}
+#footer-container {
+    .wrapper .inner-wrapper .inner-wrapper-right {
+        
+        .logo-wrapper {
+            color: #919191;
+        }
+    }
+    .wrapper .inner-wrapper .inner-wrapper-right{
+        .footer-app:hover {
+            background-color: #35AFFB;
+            color: #fff;
+        }
+    }
+}
+#footer-container {
+    .inner-wrapper .inner-wrapper-right {
+        color: #919191;
+        .about-we {
+            width: 100px;
+            height: 200px;
+            text-align: left;
+            position: relative;
+            left: 45px;
+            top: -4px;
+            ul {
+                margin-top: 20px;
+            }
+            ul li {
+                list-style: none;
+                margin-bottom: 10px;
+                a {
+                    color: #919191;
+                }
+                a:hover {
+                    color: #35AFFB;
+                }
+            }
+            h3 {
+                color:#FBFBFB;
+            } 
+        }
+    }
+}
+#footer-container {
+    .inner-wrapper .inner-wrapper-right {
+        color: #919191;
+        .friend-link {
+            width: 100px;
+            height: 200px;
+            text-align: left;
+            position: relative;
+            left: -504px;
+            top: -4px;
+            ul {
+                margin-top: 20px;
+            }
+            ul li {
+                list-style: none;
+                margin-bottom: 10px;
+                a {
+                    color: #919191;
+                }
+                a:hover {
+                    color: #35AFFB;
+                }
+            }
+            h3 {
+                color:#FBFBFB;
+            } 
+        }
+    }
+}
+.left {
+    float: left;
+}

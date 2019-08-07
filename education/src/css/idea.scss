@@ -1,0 +1,115 @@
+#idea {
+    width: 880px;
+
+    .idea-feedBack {
+        width: 880px;
+        color: #666;
+        font-size: 14px;
+        padding: 20px;
+        font-family: "Microsoft YaHei";
+        text-align: left;
+
+        .header-feed {
+            width: 880px;
+            height: 64px;
+
+            h2 {
+                font-size: 26px;
+            }
+
+            p {
+                margin: 10px 0px;
+
+                a {
+                    color: #E6A23C;
+                }
+
+                a:hover {
+                    color: #35AFFB;
+                }
+            }
+        }
+
+        .question-category {
+            margin: 10px 0px;
+             .type {
+                margin: 10px 4px;
+                font-size: 12px;
+                width: 510px;
+            }
+        }
+        .title {
+            margin-top: 20px;
+            .input-title {
+                margin: 10px 0;
+                width: 600px;
+                input {
+                    width: 600px;
+                }
+            }
+        }
+        .content{
+            margin-top: 20px;
+            height: 530px;
+            .content-text {
+                margin: 10px 0;
+                width: 600px;
+                margin-bottom: 10px;
+                input {
+                    width: 600px;
+                }
+            }
+            .upload-cutimg {
+               margin-top: 10px;
+                .el-upload-list {
+                    margin-top: 10px;
+                    padding: 0;
+                    list-style: none;
+                    min-width: 310px;
+                    max-width: 400px;
+                    max-height: 200px;
+                    overflow: scroll;
+                    li {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+        .contact-type {
+            margin-top: 20px;
+            .email-input {
+                width: 600px;
+                margin: 10px 0;
+                input {
+                    width: 600px;
+                }
+            }
+        }
+        .submit {
+            margin-top: 30px;
+        }
+    }
+    .f-sign {
+        font-weight: bold;
+        color: #cc3333;
+        padding-right: 5px;
+        vertical-align: middle;
+    }
+    .f-left {
+        float: left;
+    }
+    ::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 4px;
+    }
+    ::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.2);
+    }
+    ::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 0;
+        background: rgba(0,0,0,0.1);
+    }
+}

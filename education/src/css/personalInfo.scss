@@ -1,0 +1,198 @@
+#personalInfo {
+    width: 1903px;
+    margin: 0 auto;
+}
+.nav {
+    z-index: 10000;
+        margin-bottom: 20px;
+        height: 60px;
+        box-shadow: 6px 6px 8px rgb(180, 177, 177);
+        position: relative;
+}
+.main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 20px;
+    height: 640px;
+    position: relative;
+    .info-top {
+        width: 1300px;
+        height: 200px;
+        border: 2px solid #eee;
+        margin: 0 300px;
+        position: absolute;
+        .left-message {
+            .img-info {
+                float: left;
+                padding: 40px 10px 20px 30px;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                }
+            }
+            .complex-info {
+                
+                .name {
+                    color: #a4a4a4;
+                    position: absolute;
+                    top: 40px;
+                    left: 140px;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+                .grade {
+                    color: #fec42d;
+                    position: absolute;
+                    top: 40px;
+                    left: 303px;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+                .open-vip  {
+                    position: absolute;
+                    top: 49px;
+                    left: 338px;
+                    color: rgb(145, 37, 172);
+                    font-size: 12px;
+                }
+                .personal-edit {
+                    position: absolute;
+                    top: 36px;
+                    left: 400px;
+                    font-size: 23px;
+                }
+                .join-time {
+                    position: absolute;
+                    top: 90px;
+                    left: 140px;
+                }
+            }
+        }
+    }
+    .my-course {
+        margin-top: 220px;
+        width: 1000px;
+        height: 400px;
+        margin-left: 300px;
+        margin-right: 300px;
+        border: 2px solid #eee;
+        position: absolute;
+        .my-course-top {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 20px 30px;
+            height: 20px;   
+            border-bottom: 1px solid #eee;
+        }
+        .my-course-main {
+            ul {
+                li {
+                    list-style: none;
+                    width: 236px;
+                    height: 270px;
+                    margin-right: 14px;
+                    margin-top: 20px;
+                    float: left;
+                    background-color: #f7f7f7;
+                    a {
+                        
+                        display: inline-block;
+                        width: 100%;
+                        height: 270px;
+                    }
+                    a:hover {
+                        box-shadow: 0px 5px 5px rgb(163, 163, 163);
+                        transform: translateY(-10px);
+                        transition: box-shadow 0.5s,transform 0.5s;
+                        border-top: 2px solid #4cdec3;
+                        .detail-top {
+                            width: 236px;
+                            height: 136px;
+                            font-size: 16px;
+                            position: absolute;
+                            border-bottom: 1px solid #eee;
+                            img {
+                                width: 236px;
+                                height: 136px;
+                            }
+                        }
+                        .course-teacher {
+                            position: absolute;
+                            height: 24px;
+                            top: 140px;
+                            padding-left:10px;
+                            color: #818a92; 
+                        }
+                        .course-teacher-detail {
+                            width: 216px;
+                            height: 24px;
+                            font-size: 14px;
+                            position: absolute;
+                            color:#818a92;
+                            top: 190px;
+                            overflow: hidden;
+                            padding-left:9px;
+            
+            
+                        }
+                        .detail-main {
+                            width: 226px;
+                            height: 41px;
+                            font-size: 14px;
+                            position: absolute;
+                            color: #818a92;
+                            top: 220px;
+                            text-align: left;
+                            overflow: hidden;
+                            padding-left:11px;
+                        }
+                    }
+                }
+            }
+            .detail-top {
+                width: 236px;
+                height: 136px;
+                font-size: 16px;
+                position: absolute;
+                border-bottom: 1px solid #eee;
+                img {
+                    width: 236px;
+                    height: 136px;
+                }
+            }
+            .course-teacher {
+                position: absolute;
+                height: 24px;
+                top: 220px;
+                padding-left:10px;
+                color: #818a92; 
+            }
+            .course-teacher-detail {
+                width: 216px;
+                height: 24px;
+                font-size: 14px;
+                position: absolute;
+                color:#818a92;
+                top: 270px;
+                overflow: hidden;
+                padding-left:9px;
+
+
+            }
+            .detail-main {
+                width: 226px;
+                height: 41px;
+                font-size: 14px;
+                position: absolute;
+                color: #818a92;
+                top: 300px;
+                text-align: left;
+                overflow: hidden;
+                padding-left:11px;
+            }
+        }
+    }
+}

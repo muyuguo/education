@@ -1,0 +1,42 @@
+#resource {
+    width: 1903px;
+    margin: 0 auto;
+    .nav {
+        z-index: 10000;
+        margin-bottom: 20px;
+        height: 60px;
+        box-shadow: 6px 6px 8px rgb(180, 177, 177);
+        position: relative;
+    }
+    .main {
+        width: 1300px;
+        height: 1000px;
+        border: 2px solid #eee;
+        background-color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+        .document,.video,.other {
+            .top {
+                height: 80px;
+                text-align: left;
+                border-bottom: 2px solid #eee;
+                h2 {
+                    padding-top: 40px;
+                }
+            }
+            .container {
+                margin-top: 20px;
+                min-height: 300px;
+                padding-left: 30px;
+                text-align: left;
+                ul {
+                    li {
+                        height: 30px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
