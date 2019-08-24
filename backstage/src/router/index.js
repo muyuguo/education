@@ -11,6 +11,9 @@ const personalMessage = () => import('../components/manage/messageManage/persona
 const teacherManage = () => import('../components/manage/teacherManage.vue')
 const error = () => import ('../components/manage/401.vue')
 const messageInfo = () => import('../components/messageInfo.vue')
+const pushInfo = () => import('../components/pushInfo.vue')
+const courseManage = () => import('../components/manage/courseManage.vue')
+const taskManage = () => import('../components/manage/taskManage.vue')
 Vue.use(Router)
 
 const routes = [
@@ -64,6 +67,24 @@ const routes = [
                 path: '/messageInfo',
                 name: messageInfo,
                 component: (resolve) => require(['../components/messageInfo.vue'],resolve)
+            },
+            //发布通知
+            {
+                path: '/pushInfo',
+                name: pushInfo,
+                component: (resolve) => require(['../components/pushInfo.vue'],resolve)
+            },
+            //课程管理
+            {
+                path: '/courseManage',
+                name: courseManage,
+                component: (resolve) => require(['../components/manage/courseManage.vue'],resolve)
+            },
+            //任务管理
+            {
+                path: '/taskManage',
+                name: taskManage,
+                component: (resolve) => require(['../components/manage/taskManage.vue'],resolve)
             }
         ]
     },

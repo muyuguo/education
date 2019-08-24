@@ -1,0 +1,112 @@
+#taskManage {
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+
+    .left-taskView {
+        width: 100%;
+        height: 100%;
+        .tip {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background-color: #b0d1d3;
+        text-align: left;
+        margin-bottom: 30px;
+        p {
+            padding-left: 30px;
+            color: #07895d;
+        }
+        }
+        .bg-purple {
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        .todoList {
+            min-height: 150px;
+            h3 {
+                color: #fff;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                background-color: #E6A23C;
+            }
+        }
+
+        .workingList {
+            min-height: 150px;
+            h3 {
+                color: #fff;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                background-color: #67C23A;
+            }
+        }
+
+        .doneList {
+            min-height: 150px;
+            h3 {
+                color: #fff;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                background-color: #F56C6C;
+            }
+        }
+        .list-group {
+            margin-top: 20px;
+            height: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            .list-group-item {
+                height: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+                background-color: #eee;
+                border-radius: 4px;
+                border: 1px solid #eee;
+                box-shadow: 0 3px 5px #ddd;
+                i {
+                    float: right;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+            .list-group-item:hover {
+                border: 1px solid rgb(0, 140, 255);
+                transition: border 0.5s;
+            }
+            .addTask {
+                width: 100%;
+                height: 50px;
+                button {
+                    float: left;
+                }
+                .el-input {
+                    float: left;
+                    width: 365px;
+                    
+                    input {
+                        float: left;
+                        margin-left: 10px;
+                        width: 365px;
+                    }
+                }
+            }   
+        }
+    }
+}
+#index .main-content .main-wrapper {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    padding: 20px;
+}

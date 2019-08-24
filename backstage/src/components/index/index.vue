@@ -19,7 +19,6 @@
             active-text-color="#41B883"
             :collapse="isCollapse"
             :collapse-transition="true"
-            :unique-opened="true"
           >
             <el-menu-item index="/dataView" @click="reloadRouter('/dataView')">
               <i class="el-icon-s-home"></i>
@@ -50,13 +49,25 @@
                   @click="reloadRouter('/personalMessage')"
                 >个人信息</el-menu-item>
                 <el-menu-item index="/editMessage" @click="reloadRouter('/editMessage')">修改信息</el-menu-item>
-                <el-menu-item index="/messageInfo" @click="reloadRouter('/messageInfo')">消息通知</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-
-            <el-menu-item index="barchart">
+            <el-submenu index="4">
+              <template slot="title">
+                <i class="el-icon-s-comment"></i>
+                <span>消息管理</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="/messageInfo" @click="reloadRouter('/messageInfo')">消息通知</el-menu-item>
+                <el-menu-item index="/pushInfo" @click="reloadRouter('/pushInfo')">发布通知</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+            <el-menu-item index="/courseManage"  @click="reloadRouter('/courseManage')">
               <i class="el-icon-s-data"></i>
-              <span slot="title">数据管理</span>
+              <span slot="title">课程管理</span>
+            </el-menu-item>
+            <el-menu-item index="/taskManage"  @click="reloadRouter('/taskManage')">
+              <i class="el-icon-s-claim"></i>
+              <span slot="title">任务管理</span>
             </el-menu-item>
             <el-menu-item index="lineChart">
               <i class="el-icon-s-tools"></i>
