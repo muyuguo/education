@@ -6,7 +6,7 @@
     font-size: 16px;
     background-color: #2e323e;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
 
     .nav-top {
         width: 100%;
@@ -19,6 +19,7 @@
         font-size: 16px;
         margin: 0px;
         padding: 0px;
+        position: absolute;
 
         .nav-container {
             width: 1280px;
@@ -27,6 +28,7 @@
             font-size: 16px;
             margin: 0 auto;
             padding: 0px;
+            position: absolute;
 
             .logo {
                 font-size: 26px;
@@ -34,6 +36,8 @@
                 height: 30px;
                 display: inline-block;
                 line-height: 83px;
+                position: absolute;
+                left: 310px;
 
                 a {
                     display: inline-block;
@@ -49,14 +53,17 @@
 
             .left-nav-complex {
                 margin-left: 30px;
+                position: absolute;
+                left: 390px;
 
                 .nav-community {
                     position: absolute;
-                    left: 680px;
+                    left: 269px;
                     color: #fff;
                     height: 60px;
                     line-height: 60px;
                     margin-left: 30px;
+                    width: 51px;
                 }
 
                 .nav-study,
@@ -179,7 +186,10 @@
             }
 
             .right-nav-complex {
-width: 700px;
+                width: 700px;
+                position: absolute;
+                left: 900px;
+
                 .downland-app,
                 .search,
                 .login-register {
@@ -222,7 +232,7 @@ width: 700px;
             height: 30px;
             position: absolute;
             top: 10px;
-            left: 1555px;
+            left: 650px;
         }
 
         .personal-img-info {

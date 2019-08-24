@@ -32,7 +32,7 @@
                 </div>
                 <div class="top-header-right-menu left">
                   <router-link to="/header">后台管理</router-link>
-                  <router-link to="/courseList">我的课程</router-link>
+                  <router-link :to="{path: '/courseList/page', query: {page: 1}}">我的课程</router-link>
                   <router-link to="/mall">金豆商城</router-link>
                   <div class="login-register right">
                     <div class="no-login" v-show="isLoginRegister">
@@ -84,7 +84,7 @@
                     <router-link to>学习中心</router-link>
                   </div>
                   <div class="top-nav-coursea left margin-left-32">
-                    <router-link to="/">今日课程</router-link>
+                    <router-link to="/returnTop">今日课程</router-link>
                   </div>
                   <div class="top-nav-explore left margin-left-32">
                     <div
@@ -148,6 +148,9 @@
                         </li>
                       </ul>
                     </div>
+                  </div>
+                  <div class="textScroll">
+                    <textScroll></textScroll>
                   </div>
                   <div class="top-nav-complex">
                     <ul class="right">
@@ -345,6 +348,7 @@
 import header from "../components/plugin/header.vue";
 import Carousel from "./main-page/carousel.vue";
 import FooterWrapeer from "./footer-page/footerWrapeer.vue";
+import textScroll from "../components/plugin/textScroll.vue";
 export default {
   name: "index",
   data: function() {
@@ -396,7 +400,8 @@ export default {
   components: {
     headerView: header,
     carousel: Carousel,
-    footerWrapeer: FooterWrapeer
+    footerWrapeer: FooterWrapeer,
+    textScroll
   },
   methods: {
     handleSelect: function() {},
@@ -428,10 +433,23 @@ export default {
       this.isShow = !this.isShow;
     },
     search: function() {
-      let txt = this.searchText;
-      this.$store.dispatch('userSearch',txt);
+      let coment = this.searchText;
+      this.$store.dispatch("userSearch", coment);
       console.log("tiaozhaun");
-      this.$router.push('/search');
+      this.$router.push({
+        path: '/search',
+        query: {
+          list: this.searchText,
+        }
+      });
+      this.axios
+        .post(
+          "http://188.131.173.104/hlw+/select.php",
+          JSON.stringify({ coment: coment })
+        )
+        .then(res => {
+          console.log('index:',res.data)
+        });
     },
     addAvatarComplex: function() {
       this.avatarComplex = true;

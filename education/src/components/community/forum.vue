@@ -59,7 +59,7 @@
         <div class="right-complex">
           <div class="right-content">
             <el-button type="primary" plain @click="jumpEditor">我要发帖</el-button>
-            <el-button type="success" plain>每日签到</el-button>
+            <el-button type="success" plain @click="checkIn">每日签到</el-button>
             <!--近期活动-->
             <div class="event-notice">
               <div class="box-header">
@@ -73,6 +73,9 @@
             </div>
           </div>
         </div>
+        <div class="calendar">
+          <calendar :dialogCalendar="post.dialogCalendar" @listenDialog="changeDialog"></calendar>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -83,18 +86,23 @@
 <script>
 import header from "../plugin/header.vue";
 import footer from "../footer-page/footerWrapeer.vue";
+import calendar from "../plugin/calendar.vue"
 
 export default {
   name: "forum",
   data: function() {
     return {
       activeName: "first",
-      isMainContainer: true
+      isMainContainer: true,
+      post: {
+        dialogCalendar: false,
+      }
     };
   },
   components: {
     headerView: header,
-    footerWrapeer: footer
+    footerWrapeer: footer,
+    calendar
   },
 /*mounted:function(){
   console.log(this.$route.path);
@@ -110,6 +118,16 @@ export default {
       //编程式导航，跳转至下一级页面
       this.isMainContainer = false;
       this.$router.push('/forum/editor');
+    },
+    //签到
+    checkIn: function() {
+      this.post.dialogCalendar = !this.post.dialogCalendar;
+      console.log(this.post.dialogCalendar)
+    },
+    //通过接收子组件传值来改变父组件数据
+    changeDialog: function(data) {
+      this.post.dialogCalendar = data;
+      console.log(data)
     }
   }
 };

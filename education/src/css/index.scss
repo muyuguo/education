@@ -9,6 +9,8 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    width: 1903px;
+    
 }
 
 a {
@@ -16,7 +18,7 @@ a {
 }
 
 .scroll-nav {
-    width: 1903px;
+    width: 100%;
     margin: 0 auto;
     position: fixed;
     top: 0;
@@ -297,7 +299,16 @@ a {
     }
 
 }
-
+.textScroll {
+    position: absolute;
+    float: left;
+    width: 600px;
+    height: 33px;
+    line-height: 33px;
+    margin-left: 150px;
+    top: 108px;
+    left: 625px;
+}
 .top-nav .top-nav-menu .top-nav-complex {
     li {
         list-style: none;

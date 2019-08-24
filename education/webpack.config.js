@@ -6,9 +6,9 @@ module.exports = {
     entry: './src/main.js',
     output: {
         // 输出目录
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, 'dist'),
         // 静态目录,从这里取文件
-        publicPath: './dist/',
+        publicPath: './',
         // 文件名
         filename: 'index.js',
     },
@@ -53,24 +53,17 @@ module.exports = {
  
                 test: /\.scss$/,
                 loader: 'style-loader!css-loader!sass-loader',
-                },
-                {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpe?g|gif)(\?\S*)?$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options:{
-                            
-                        }
-                }
-                ]
                 
-            },
+                },
+                
             {
-                test: /\.(eot|ttf|woff|woff2|png|jpe?g|gif|svg)(\?.*)?$/, //
+                test: /\.(eot|ttf|woff|woff2|png|jpe?g|gif|svg)(\?.*)?$/, //如果图片小于50k压缩图片为base64格式，url-loader内置了file-loader
                 loader: 'url-loader',
                 options: {
-                  limit: 10000000,
+                  limit: 50000,
+                  outputPath: "./img", //该路径基于output下的输出目录
+                  publicPath: "./img",
+                  name: "[name].[hash:5].[ext]",
         
                 }
               },
@@ -79,5 +72,15 @@ module.exports = {
     plugins: [
         // 请确保引入这个插件！
         new VueLoaderPlugin()
-      ]
+      ],
+      performance: {
+        hints: "warning", // 枚举
+        maxAssetSize: 30000000, // 整数类型（以字节为单位）
+        maxEntrypointSize: 50000000, // 整数类型（以字节为单位）
+        assetFilter: function(assetFilename) {
+        // 提供资源文件名的断言函数
+        return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
+        
+        }
+    },
 }

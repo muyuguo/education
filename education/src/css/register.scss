@@ -1,11 +1,11 @@
 #register {
-    width: 100%;
+    width: 1903px;
 
     .register-wrapper {
         border: 1px solid #807b7b;
         width: 500px;
         min-width: 500px;
-        height: 500px;
+        height: 490px;
         margin-left: 800px;
         margin-top: 200px;
         display: inline-block;
@@ -31,6 +31,13 @@
             }
         }
     }
+    .count-down {
+        border: 1px solid #6FB6FF;
+        width: 112px;
+        height: 40px;
+        background-color: #6FB6FF;
+        text-align: left;
+    }
 }
 //注册头
 .register-set-panel .rgister-text .title {
@@ -49,5 +56,4 @@
 }
 //验证码
 .register-set-panel .rgister-text .verification {
-    margin-bottom: 30px;
 }

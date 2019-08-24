@@ -1,106 +1,109 @@
 <template>
-  <transition name="el-fade-in">
-    <div class="page-up" @click="scrollToTop" v-show="toTopShow">
-      <i class="el-icon-caret-top"></i>
-    </div>
-  </transition>
+  <div id="returnTop">
+    <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+  <el-form-item label="活动名称" prop="name">
+    <el-input v-model="ruleForm.name"></el-input>
+  </el-form-item>
+  <el-form-item label="活动区域" prop="region">
+    <el-select v-model="ruleForm.region" placeholder="请选择活动区域">
+      <el-option label="区域一" value="shanghai"></el-option>
+      <el-option label="区域二" value="beijing"></el-option>
+    </el-select>
+  </el-form-item>
+  <el-form-item label="活动时间" required>
+    <el-col :span="11">
+      <el-form-item prop="date1">
+        <el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
+      </el-form-item>
+    </el-col>
+    <el-col class="line" :span="2">-</el-col>
+    <el-col :span="11">
+      <el-form-item prop="date2">
+        <el-time-picker placeholder="选择时间" v-model="ruleForm.date2" style="width: 100%;"></el-time-picker>
+      </el-form-item>
+    </el-col>
+  </el-form-item>
+  <el-form-item label="即时配送" prop="delivery">
+    <el-switch v-model="ruleForm.delivery"></el-switch>
+  </el-form-item>
+  <el-form-item label="活动性质" prop="type">
+    <el-checkbox-group v-model="ruleForm.type">
+      <el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
+      <el-checkbox label="地推活动" name="type"></el-checkbox>
+      <el-checkbox label="线下主题活动" name="type"></el-checkbox>
+      <el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
+    </el-checkbox-group>
+  </el-form-item>
+  <el-form-item label="特殊资源" prop="resource">
+    <el-radio-group v-model="ruleForm.resource">
+      <el-radio label="线上品牌商赞助"></el-radio>
+      <el-radio label="线下场地免费"></el-radio>
+    </el-radio-group>
+  </el-form-item>
+  <el-form-item label="活动形式" prop="desc">
+    <el-input type="textarea" v-model="ruleForm.desc"></el-input>
+  </el-form-item>
+  <el-form-item>
+    <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
+    <el-button @click="resetForm('ruleForm')">重置</el-button>
+  </el-form-item>
+</el-form>
+  </div>
 </template>
-
 <script>
-export default {
-  name: "app-to-top",
-  data() {
-    return {
-      toTopShow: false
-    };
-  },
-  methods: {
-    handleScroll() {
-      /* 获取回到顶部的位置元素 .content-container-top */
-      let dom = document.getElementsByClassName("content-container-top")[0];
-      this.scrollTop = dom.scrollTop;
-      if (this.scrollTop > 300) {
-        this.toTopShow = true;
-      } else {
-        this.toTopShow = false;
-      }
-    },
-    scrollToTop() {
-      let timer = null;
-      let _this = this;
-      cancelAnimationFrame(timer);
-      timer = requestAnimationFrame(function fn() {
-        if (_this.scrollTop > 5000) {
-          _this.scrollTop -= 1000;
-          document.getElementsByClassName("content-container")[0].scrollTop =
-            _this.scrollTop;
-          timer = requestAnimationFrame(fn);
-        } else if (_this.scrollTop > 1000 && _this.scrollTop <= 5000) {
-          _this.scrollTop -= 500;
-          document.getElementsByClassName("content-container")[0].scrollTop =
-            _this.scrollTop;
-          timer = requestAnimationFrame(fn);
-        } else if (_this.scrollTop > 200 && _this.scrollTop <= 1000) {
-          _this.scrollTop -= 100;
-          document.getElementsByClassName("content-container")[0].scrollTop =
-            _this.scrollTop;
-          timer = requestAnimationFrame(fn);
-        } else if (_this.scrollTop > 50 && _this.scrollTop <= 200) {
-          _this.scrollTop -= 10;
-          document.getElementsByClassName("content-container")[0].scrollTop =
-            _this.scrollTop;
-          timer = requestAnimationFrame(fn);
-        } else if (_this.scrollTop > 0 && _this.scrollTop <= 50) {
-          _this.scrollTop -= 5;
-          document.getElementsByClassName("content-container")[0].scrollTop =
-            _this.scrollTop;
-          timer = requestAnimationFrame(fn);
-        } else {
-          cancelAnimationFrame(timer);
-          _this.toTopShow = false;
+  export default {
+    data() {
+      return {
+        ruleForm: {
+          name: '',
+          region: '',
+          date1: '',
+          date2: '',
+          delivery: false,
+          type: [],
+          resource: '',
+          desc: ''
+        },
+        rules: {
+          name: [
+            { required: true, message: '请输入活动名称', trigger: 'blur' },
+            { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+          ],
+          region: [
+            { required: true, message: '请选择活动区域', trigger: 'change' }
+          ],
+          date1: [
+            { type: 'date', required: true, message: '请选择日期', trigger: 'change' }
+          ],
+          date2: [
+            { type: 'date', required: true, message: '请选择时间', trigger: 'change' }
+          ],
+          type: [
+            { type: 'array', required: true, message: '请至少选择一个活动性质', trigger: 'change' }
+          ],
+          resource: [
+            { required: true, message: '请选择活动资源', trigger: 'change' }
+          ],
+          desc: [
+            { required: true, message: '请填写活动形式', trigger: 'blur' }
+          ]
         }
-      });
+      };
+    },
+    methods: {
+      submitForm(formName) {
+        this.$refs[formName].validate((valid) => {
+          if (valid) {
+            alert('submit!');
+          } else {
+            console.log('error submit!!');
+            return false;
+          }
+        });
+      },
+      resetForm(formName) {
+        this.$refs[formName].resetFields();
+      }
     }
-  },
-  mounted() {
-    this.$nextTick(function() {
-      window.addEventListener("scroll", this.handleScroll, true); // 取消事件冒泡，防止绑定失败
-    });
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll, true); // 取消事件冒泡
   }
-};
 </script>
-
-<style scoped>
-.page-up {
-  background-color: #409eff;
-  position: fixed;
-  right: 50px;
-  bottom: 30px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-  opacity: 0.5;
-  z-index: 100;
-}
-.el-icon-caret-top {
-  color: #fff;
-  display: block;
-  line-height: 40px;
-  text-align: center;
-  font-size: 18px;
-}
-p {
-  display: none;
-  text-align: center;
-  color: #fff;
-}
-.page-up:hover {
-  opacity: 1;
-}
-</style>

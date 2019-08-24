@@ -52,7 +52,7 @@ const routes = [
   },
   //课程列表
   {
-    path: '/courseList',
+    path: '/courseList/:page',
     name: courseList,
     component: (resolve) => require(['../components/plugin/courseList.vue'], resolve),
     meta: {

@@ -2,6 +2,7 @@
     width: 1903px;
     margin: 0 auto;
     color: #E1E1E1;
+
     //nav-部分
     .top-nav {
         z-index: 10000;
@@ -76,6 +77,7 @@
 
                             .content-tip {
                                 max-height: 0;
+
                                 .author {
                                     position: absolute;
                                     top: 29px;
@@ -98,12 +100,13 @@
                             }
                         }
                     }
+
                     .pagination {
                         margin-top: 30px;
                         margin-left: auto;
                         margin-right: auto;
                         width: 786px;
-                        
+
                         li {
                             width: 22px;
                         }
@@ -111,16 +114,19 @@
                 }
 
             }
-                //右侧功能区
+
+            //右侧功能区
             .right-complex {
                 width: 280px;
                 margin-right: 370px;
                 margin-left: 20px;
-                position: relative;
+                position: absolute;
+                left: 1220px;
 
                 .right-content {
-                    
+
                     border-radius: 2px;
+
                     button {
                         width: 100%;
                         margin-bottom: 15px;
@@ -129,29 +135,33 @@
                         font-size: 20px;
 
                     }
+
                     //近期活动
                     .event-notice {
                         margin-bottom: 10px;
                         width: 100%;
                         min-height: 150px;
-                        
+
                         background-color: #fff;
                         border-radius: 2px;
                         box-shadow: 3px 4px 5px #eee;
+
                         //活动头
                         .box-header {
                             padding: 10px;
-                            
+
                             position: absolute;
                             width: 261px;
                             text-align: left;
                             background-color: #f6f6f6;
+
                             span {
                                 font-size: 16px;
                                 color: #333;
                                 font-weight: 700;
                             }
                         }
+
                         //活动内容
                         .box-body {
                             padding: 10px;
@@ -159,6 +169,7 @@
                             position: absolute;
                             top: 190px;
                             color: #333;
+
                             ul {
                                 li {
                                     list-style: none;
@@ -172,6 +183,7 @@
 
         }
     }
+
     .el-tabs__item {
         padding: 0 20px;
         height: 40px;
@@ -186,6 +198,7 @@
         width: 130px;
         font-size: 16px;
     }
+
     //footer部分
     .footer {}
 }
